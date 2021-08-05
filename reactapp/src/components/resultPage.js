@@ -288,7 +288,7 @@ if(isLogin==true){
 
   <CountAids numberOfAids={numberOfAids}/>
 
-  <div>
+  <div style={{marginTop: '5vh'}}>
       {displayFilAriane}
   </div>
 
