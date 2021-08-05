@@ -269,6 +269,8 @@ var idAriane=''
 if (fil.name !='' ){reponse=fil.name}
 else {reponse='Champ non renseigné';idAriane='ChampNonRenseigne'}
 
+
+
         return ( <Text className="Ariane" id={idAriane}><img className='Numero' src={icone} alt='' id={idAriane} />{reponse}</Text> ) 
         });
 
