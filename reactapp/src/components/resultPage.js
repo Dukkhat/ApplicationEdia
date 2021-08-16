@@ -12,7 +12,6 @@ import './visuels/resultPage.css';
 import './visuels/Modal.css';
 
 import Navigation from './navigation';
-import Bouton from './Bouton';
 import CountAids from './countaids';
 import FilAriane from './filariane';
 
@@ -23,18 +22,12 @@ function ResultPage (props) {
  
 
   const [ResultList, setResultList] = useState([])
-  const [addingAid, setAddingAid] = useState (false)
-  const [addList, setAddList] = useState([])
   const [isLogin,setIsLogin]= useState(true)
   const [numberOfAids, setNumberOfAids] = useState(0);
-  const [filAr, setFilAr] = useState([])
   const [ids, setIds] = useState({})
   const [modalIsOpen, setModalIsOpen] = useState (false)
   const [blurEffect, setBlurEffect] = useState('blurEffectOff')
  
-
- 
-  
   const { Text, Link } = Typography;
 
 
@@ -50,7 +43,6 @@ function ResultPage (props) {
     setNumberOfAids(props.numberOfAids);
 
     const filAriane = await FilAriane(props.searchOptions);
-    setFilAr(filAriane);
     setIds(idlist)
     setBlurEffect('blurEffectOff')
     
@@ -67,27 +59,18 @@ var importResult = props.aids.map((aid, i) => ({
 
 }));
 
+//Fonctions de design
 
-
-var idlist ={id1:"", id2:"", id3:"", id4:"", id5:""}
-
-
-
- 
-
-       
-
-      
+var idlist ={id1:"", id2:"", id3:"", id4:"", id5:""}    
 var ActiverBlur = async () => {
         setBlurEffect('blurEffectOn');
-        setModalIsOpen(true)}
-    
+        setModalIsOpen(true)}   
 var DesactiverBlur = async () => {
             setBlurEffect('blurEffectOff');
             setModalIsOpen(false)}
        
         
-      // Fonctions de tri
+// Fonctions de tri
       var TrierParMontant = async () => {
                   importResult.sort(
                       function compareMountant( a, b ) {
@@ -140,7 +123,7 @@ var DesactiverBlur = async () => {
   
 
 
-
+// Fonction mise en favori
 
       var addUserAid= async(aide,id)=>{
 
@@ -160,7 +143,7 @@ var DesactiverBlur = async () => {
                           }
                 })
             setResultList(copyList)
-            console.log(id,'idqlsdkjlqskd')
+            console.log(id,'id')
 
             var newFavorite
                 if(aide.favorite==undefined || aide.favorite==false){
@@ -183,7 +166,7 @@ var DesactiverBlur = async () => {
 
  
 
-
+//fonction d'affichage des résultats
 
             var displayList = ResultList.map((aide,i) => {
                             if(aide.favorite ==true){
@@ -196,12 +179,12 @@ var DesactiverBlur = async () => {
 
 return(
                 
-    <Col xs={{ span: 2, offset: 0 }}  md={{ span: 8, offset: 0 }} lg={{ span: 8, offset: 0 }}key={i}>
+    <Col xs={{ span: 23, offset:1 }} sm={{ span: 5, offset:1 }} md={{ span: 12, offset: 0 }} lg={{ span: 8, offset: 0 }}key={i}>
      
         <Card  className='CardAid' >
                 
                 <Row  className='CardRang1'>
-                      <img src={aide.logo} alt='' height='80px' />
+                      <img className='cardLogo' src={aide.logo} alt='' height='80px' />
                     
                       <div className='CardAidMontant'>{aide.montant} €</div>
                       <p><FontAwesomeIcon icon={faStar}
@@ -211,7 +194,7 @@ return(
                 </Row>
       
                 <Row className='CardAidName'>
-                      <div style={{marginBottom:'10px'}}>{aide.name}</div>
+                      <div >{aide.name}</div>
                 </Row>
                 
               
@@ -288,7 +271,7 @@ if(isLogin==true){
 
   <CountAids numberOfAids={numberOfAids}/>
 
-  <div style={{marginTop: '5vh'}}>
+  <div className='displayFil' >
       {displayFilAriane}
   </div>
 
@@ -297,7 +280,7 @@ if(isLogin==true){
 
   <div style={{display:'flex', flexDirection: 'row'}}>   
 
-  <Col xs={{ span: 24, offset: 0 }}  md={{ span: 24, offset: 0 }} lg={{ span: 5, offset: 0 }} className='Sidebar'>
+  <Col xs={{ span: 5, offset: 0 }}  sm={{ span: 5, offset: 0 }} md={{ span: 5, offset: 0 }} lg={{ span: 5, offset: 0 }} className='Sidebar'>
     
           <h2 style={{marginBottom:'20px', marginTop:'20px'}}>TRIER PAR</h2>                       
               <ul className='SidebarList'>

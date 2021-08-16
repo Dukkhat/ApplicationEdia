@@ -88,3 +88,42 @@
 .mouseHoverChange:hover {
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 600px){
+  .BarreCompteur{
+   
+    position: absolute;
+    top: 22vh;
+   left: 0vw;
+    border-right: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: Spartan;
+    color:#0A62D0
+  
+}
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+  .BarreCompteur{
+   
+    position: absolute;
+    top: 22vh;
+    left: 0vw;
+    border-right: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: Spartan;
+    color:#0A62D0
+  
+}
+
+
+
+}

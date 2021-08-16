@@ -2,6 +2,12 @@ body{
     font-family: Inter;
 text-align: justify;
 }
+
+.displayFil{
+    margin-top: 5vh;
+}
+
+
 .Ariane{
 
     padding: 15px; 
@@ -145,7 +151,6 @@ overflow-y: auto;
 }
 
 .CardAidName{
-   
     height:150px; 
     font-size: 18px;
     font-weight: bold;
@@ -153,11 +158,7 @@ overflow-y: auto;
     text-align: center;
     align-items: center;
     text-overflow: "-";
-
-  
-
-    
-    
+    margin-bottom: 10px;
 }
 
 .Hline { width:100%; height:1px; background: black }
@@ -168,8 +169,6 @@ overflow-y: auto;
     font-size: 24px;
    text-align: center;
    margin-top: 5%;
-
-  
     border-radius: 5px;
   
 }
@@ -263,4 +262,113 @@ display: flex;
     margin-left:60px;
     margin-bottom: 10px
 
+}
+
+@media screen and (max-width: 600px){
+    .displayFil{
+        display: none;
+    }
+    #Title{
+        display:none;
+        
+    }
+    .Sidebar{
+        height: max-content;
+        width:20%;
+        border-radius: 10px;
+        margin-top: 6vh;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid #E0E5E9;
+       
+    }
+
+    .cardLogo{
+        display: none;
+    }
+
+    .CardRang1{
+        height:50px;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: space-between;
+        
+    }
+    .CardAidName{
+        height:150px; 
+        font-size: 18px;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-overflow: "-";
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .displayFil{
+        display: none;
+    }
+  
+    .Sidebar{
+        height: max-content;
+        width:20%;
+        border-radius: 10px;
+        margin-top: 6vh;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 1px solid #E0E5E9;
+       
+    }
+
+    .CardAid{
+        
+      
+        border-radius:10px;
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #E0E5E9;
+        height: 475px;
+      
+        font-family: Inter;
+    }
+
+    .cardLogo{
+        display: none;
+    }
+
+    .CardRang1{
+        height:70px;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: space-between;
+        
+    }
+    .CardAidName{
+        height:150px; 
+        font-size: 18px;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-overflow: "-";
+        margin-bottom: 20px;
+    }
+
+    .CardAidMontant{
+        height:60%;
+       width: 60%;
+        font-size: 24px;
+       text-align: center;
+       margin-top: 5%;
+        border-radius: 5px;
+      
+    }
 }
