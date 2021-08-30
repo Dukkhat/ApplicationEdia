@@ -124,7 +124,7 @@ function Landingpage(props) {
                     <Col sm="12" md="6" lg="6" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10px' }}>
                         <img src='../images/sofia.png' style={{ height: 80, width: 80, marginTop: '15px' }} />
                         <div style={{ fontSize: 16, fontWeight: 'regular', fontFamily: 'Alata', borderRadius: '50px', marginTop: '10px', padding: '0 5px  0 5px', backgroundColor: '#F3D849', color: '#ffffff' }}>CEO</div>
-                        <img src='../images/illustration-450x364.png' alt="Photo d'illustration de la landing page" />
+                        <img src='../images/illustration-450x364.png' alt= "Photo d'illustration d'une entrepreneure qui recherche une aide publique pour son entreprise" />
                         <div style={{ display: 'flex', width: 550, justifyContent: 'space-between' }}>
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <img src='../images/eric.png' style={{ height: 80, width: 80 }} />
@@ -155,7 +155,7 @@ function Landingpage(props) {
 
                 <Row>
                     <Media style={{ display: 'flex', alignItems: 'center', width: '153vh', margin: "3vh", marginLeft: '10vh' }}>
-                        <Media object src="../images/yellow.png" alt="Icone avec une cible" style={{ marginRight: '5vh' }} />
+                        <Media object src="../images/yellow.png" alt="Notre algorithme vous aide à trouver les aides publiques du gouvernement qui correspondent au mieux aux besoins de votre entreprise." style={{ marginRight: '5vh' }} />
                         <Media body>
                             <Media heading style={{ fontSize: 50, fontFamily: 'Spartan', fontWeight: 'bold', color: "#191718", textAlign: 'left', }}>Intelligentes</Media>
                             <Media style={{ fontSize: 20, fontFamily: 'Inter', fontWeight: 'regular', color: "#191718", textAlign: 'left' }}>En quelques clics</Media>
@@ -164,7 +164,7 @@ function Landingpage(props) {
                     </Media>
 
                     <Media style={{ display: 'flex', alignItems: 'center', width: '153vh', margin: "3vh", marginLeft: '50vh', flexDirection: 'row-reverse' }}>
-                        <Media object src="../images/blue.png" alt="Icone avec un robot" style={{ marginRight: '10vh', marginLeft: '5vh' }} />
+                        <Media object src="../images/blue.png" alt= "Notre algorithme parcourt plus de 2000 dispositifs d'aides publiques en France et en Europe" style={{ marginRight: '10vh', marginLeft: '5vh' }} />
                         <Media body>
                             <Media heading style={{ fontSize: 50, fontFamily: 'Spartan', fontWeight: 'bold', color: "#191718", textAlign: 'right' }}>Exhaustives</Media>
                             <Media style={{ fontSize: 20, fontFamily: 'Inter', fontWeight: 'regular', color: "#191718", textAlign: 'right' }}>La puissance du big data</Media>
@@ -173,7 +173,7 @@ function Landingpage(props) {
                     </Media>
 
                     <Media style={{ display: 'flex', alignItems: 'center', width: '153vh', margin: "3vh", marginLeft: '10vh' }}>
-                        <Media object src="../images/grey.png" alt="Icone avec un avion en papier" style={{ marginRight: '5vh' }} />
+                        <Media object src="../images/grey.png" alt="Notifications envoyées quand une aide correspond à vos critères de recherche d'aides publiques." style={{ marginRight: '5vh' }} />
                         <Media body>
                             <Media heading style={{ fontSize: 50, fontFamily: 'Spartan', fontWeight: 'bold', color: "#191718", textAlign: 'left' }}>Automatisées</Media>
                             <Media style={{ fontSize: 20, fontFamily: 'Inter', fontWeight: 'regular', color: "#191718", textAlign: 'left'}}>C'est un match !</Media>
@@ -195,7 +195,7 @@ function Landingpage(props) {
                 <Row >
                     <Col sm="12" md="6" lg="4">
                         <Card style={{ display: 'flex', alignItems: 'center', border: '1px solid white', marginLeft: '3vh' }}>
-                            <CardImg top style={{ margin: '20px', width: "50%", justifyContent: 'center' }} src="../images/eric.png" alt="Photo d'Eric Schmidt" />
+                            <CardImg top style={{ margin: '20px', width: "50%", justifyContent: 'center' }} src="../images/eric.png" alt="Témoignage d'Eric Schmidt - Assistant de direction - Bol'Dair - je retrouve les aides publiques mises en favorite en un coup d'oeil dans mon compte client" />
                             <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <CardTitle tag="h1" style={{ fontSize: 50, fontFamily: 'Spartan', fontWeight: 'bold', color: "#191718" }}>Eric Schmidt</CardTitle>
                                 <CardSubtitle tag="h6" className="mb-2 text-muted" style={{ fontSize: 20, fontFamily: 'Inter', fontWeight: 'regular', color: "#191718" }}>Assistant de direction - Bol'Dair</CardSubtitle>
@@ -205,7 +205,7 @@ function Landingpage(props) {
                     </Col>
                     <Col sm="12" md="6" lg="4">
                         <Card style={{ display: 'flex', alignItems: 'center', border: '1px solid white', marginLeft: '3vh' }}>
-                            <CardImg top style={{ margin: '20px', width: "50%", justifyContent: 'center' }} src="../images/sofia.png" alt="Photo de Sofia Cantre" />
+                            <CardImg top style={{ margin: '20px', width: "50%", justifyContent: 'center' }} src="../images/sofia.png" alt="Témoignage de Sofia Cantre - CEO - Getsy : Je viens de bénéficier d'une aide publique européenne d'une valeur de 10 500€" />
                             <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <CardTitle tag="h1" style={{ fontSize: 50, fontFamily: 'Spartan', fontWeight: 'bold', color: "#191718" }}>Sofia Cantre</CardTitle>
                                 <CardSubtitle tag="h6" className="mb-2 text-muted" style={{ fontSize: 20, fontFamily: 'Inter', fontWeight: 'regular', color: "#191718" }}>CEO - Getsy</CardSubtitle>
@@ -215,7 +215,7 @@ function Landingpage(props) {
                     </Col>
                     <Col sm="12" md="6" lg="4">
                         <Card style={{ display: 'flex', alignItems: 'center', border: '1px solid white', marginLeft: '3vh' }}>
-                            <CardImg top style={{ margin: '20px', width: "50%", justifyContent: 'center' }} src="../images/jean.png" alt="Photo de Jean de Nevers" />
+                            <CardImg top style={{ margin: '20px', width: "50%", justifyContent: 'center' }} src="../images/jean.png" alt="Témoignage de Jean de Nevers - Chef d'entreprise - Palaison Transports : développe son équipe commerciale grâce à une aide de la Région Ile-de-France" />
                             <CardBody style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 <CardTitle tag="h1" style={{ fontSize: 50, fontFamily: 'Spartan', fontWeight: 'bold', color: "#191718" }}>Jean de Nevers</CardTitle>
                                 <CardSubtitle tag="h6" className="mb-2 text-muted" style={{ fontSize: 20, fontFamily: 'Inter', fontWeight: 'regular', color: "#191718" }}>Chef d'entreprise - Palaison Transports</CardSubtitle>
@@ -236,7 +236,7 @@ function Landingpage(props) {
                 {/* FOOTER */}
                 <Row style={{ display: 'flex', backgroundColor: "#E0E5E9" }}>
                     <Col>
-                        <img src='../images/petit-logo-150x94-transparent.png' alt="Logo" style={{marginTop: '2vh'  }}/>
+                        <img src='../images/petit-logo-150x94-transparent.png' alt= "Logo Edia : startup qui propose un moteur de recherche pour aider les PME et startups à trouver les aides publiques adéquates pour développer leur entreprise" style={{marginTop: '2vh'  }}/>
                     </Col>
 
                     <Col style={{ display: 'flex', flexDirection: 'column', width:"60vh", marginTop: '3vh'  }}>

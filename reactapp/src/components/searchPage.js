@@ -83,7 +83,7 @@ function SearchPage (props) {
     setOnResultPage(true);
 }
 
-// Appel composant suivant pour autre cirtère :
+// Appel composant suivant pour autre critère :
   const callNext= () => {
     props.updateIndexOptions(indexOptions+1);
     setIndexOptions(indexOptions+1);
@@ -121,7 +121,7 @@ return (
       </Content>        
     </Layout>
     <Col>
-      <Col xs={{ span: 2, offset: 5 }} md={{ span: 9, offset: 11 }} style={{
+      <Col xs={{ span: 12, offset: 6 }} md={{ span: 9, offset: 11 }} style={{
                                                                         display:'flex',
                                                                         flexDirection:'row',
                                                                         justifyContent:'space-between',
